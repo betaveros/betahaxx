@@ -1,0 +1,16 @@
+name:                betahaxx
+version:             0.1.0.0
+
+synopsis:            betaveros's light imports and utilities
+description:         betaveros's personal library of imports and utilities, with a focus on keeping code light and dependencies loose and explicit. The objective criterion for me is it should build in less than 30 seconds on my machine from a fresh sandbox. It is geared towards quick scripts and competitive programming.
+license:             MIT
+license-file:        LICENSE
+author:              Brian Chen
+maintainer:          brian.chxn@gmail.com
+build-type:          Simple
+cabal-version:       >=1.10
+
+library
+  exposed-modules:     Betahaxx, Betahaxx.Abbr, Data.Foldable.Unicode.Betahaxx, Data.Function.Betahaxx, Data.List.Betahaxx, Data.Map.Betahaxx, Numeric.Betahaxx, Prelude.Unicode.Betahaxx
+  build-depends:       base >= 4.5 && < 5, containers == 0.5.*, control-bool >= 0.2.1, base-unicode-symbols >= 0.2.2.4, split >= 0.2
+  default-language:    Haskell2010
