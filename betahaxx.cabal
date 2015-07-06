@@ -1,5 +1,5 @@
 name:                betahaxx
-version:             0.1.0.0
+version:             0.1.0.1
 
 synopsis:            betaveros's light imports and utilities
 description:         betaveros's personal library of imports and utilities, with a focus on keeping code light and dependencies loose and explicit. The objective criterion for me is it should build in less than 30 seconds on my machine from a fresh sandbox. It is geared towards quick scripts and competitive programming.
