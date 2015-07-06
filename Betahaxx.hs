@@ -1,4 +1,4 @@
-{-# LANGUAGE TupleSections #-}
+{-# LANGUAGE CPP, TupleSections #-}
 module Betahaxx
 ( bool, ifThenElse, whenM, unlessM, ifThenElseM,
   Map, Set, Seq, Foldable, fold, foldMap,
@@ -35,7 +35,11 @@ import Text.Printf         as Haxx
 
 import Prelude.Unicode.Betahaxx       as Haxx
 import Betahaxx.Abbr                  as Haxx
+#if __GLASGOW_HASKELL__ >= 710
+import Data.Function.Betahaxx         as Haxx hiding ((&))
+#else
 import Data.Function.Betahaxx         as Haxx
+#endif
 import Data.List.Betahaxx             as Haxx
 import Data.Map.Betahaxx              as Haxx
 import Data.Foldable.Unicode.Betahaxx as Haxx
